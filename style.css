@@ -71,7 +71,7 @@ header .header-menu a:hover{
 main{
     width: 100%;
     height: 100%;
-    background-color: #2C3333;
+    background-color: #2d2e2e;
 }
 main .main-container-1st{
     background-color: #F5F5F5;
@@ -79,6 +79,7 @@ main .main-container-1st{
     padding-bottom: 40px;
     width: 100%; 
     height: auto;
+    
 }
 main .main-container-1st .main-section-container{
     width: 70%;
@@ -89,6 +90,7 @@ main .main-container-1st .main-section-container{
     display: flex;
     align-items: center;
     max-height: 350px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 main .main-container-1st .main-section-container  img{
@@ -102,7 +104,7 @@ main .main-container-1st .main-section-container .text-container{
     width: 60%;
     height: auto;
     padding: 30px;
-    color: rgb(65, 65, 65);
+    color: rgb(46, 46, 46);
 }
 main .main-section-container .text-container h3{
     font-size: 4rem;
@@ -133,6 +135,7 @@ article {
   overflow: hidden;
   text-align: justify;
   background-color: #202020;
+
 }
 
 article a::after {
@@ -215,7 +218,7 @@ article:has(:hover, :focus) {
   margin-inline: auto;
   padding-inline: 24px;
   grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-  gap: 34px;
+  gap: 40px;
   padding-top: 48px;
   padding-bottom: 48px;
   
