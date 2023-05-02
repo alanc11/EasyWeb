@@ -24,7 +24,7 @@ header{
     height: 90px;
     display: flex;
     justify-content: flex-start;
-    background-color: #F5F5F5;
+    background-color: #F3F3FE;
     padding-left: 70px;
     padding-top: 25px;
 }
@@ -64,7 +64,7 @@ header .header-menu a{
     transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
 }
 header .header-menu a:hover{
-    box-shadow: inset 100px 0 0 0 #A5C9CA;
+    box-shadow: inset 100px 0 0 0 #19A7CE;
     color: #2C3333;
     
 }
@@ -74,7 +74,7 @@ main{
     background-color: #2d2e2e;
 }
 main .main-container-1st{
-    background-color: #F5F5F5;
+    background-color: #F3F3FE;
     padding-top: 40px;
     padding-bottom: 40px;
     width: 100%; 
@@ -263,6 +263,122 @@ article:has(:hover, :focus) {
   white-space: nowrap; 
   width: 1px;
 }
+footer{
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-around;
+  background-color: #F3F3FE;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+footer div{
+  display: flex;
+  flex-direction: column;
+}
+footer  p{
+  font-size: 1.3rem;
+  margin-bottom: 4px;
+  text-align: center;
+  font-weight: bold;
+}
+footer  a{
+  font-size: 1.2rem;
+  margin-bottom: 3px;
+  text-align: center;
+}
+@media only screen and (max-width: 767px) {
+  /* Aquí van los estilos para celulares */
+  header{
+    padding: 0;
+    margin: 0;
+  }
+  header .header-logo{
+    justify-content: center;
+    margin: 0 auto;
+    font-size: 1.7rem;
+  }
+  header img{
+    width: 50px;
+    height: 50px;
+}
+  header .header-menu{
+    display: none;
+  }
+  main .main-container-1st .main-section-container{
+    width: 90%;
+    height: 350px;
+    background-color: #2e2e2e;
+    
+}
+  main .main-container-1st .main-section-container  img{
+    display: none;
+  }
+  main .main-container-1st .main-section-container .text-container{
+    width: 100%;
+    height: auto;
+    padding: 30px;
+    color: white;
+}
+main .main-section-container .text-container h3{
+    font-size: 2rem;
+    letter-spacing: 1.5px;
+}
+main .main-section-container .text-container p{
+    font-size: 1.5rem;
+    
+    margin-top: 35px;
+    line-height: 2.7rem;
+}
+footer{
+  flex-direction: column;
+  align-items: center;
+}
+footer div{
+  margin-bottom: 8px;
+}
+}
 
+.card {
+  border: 1px solid #ccc;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: relative;
+  padding: 18px;
+}
 
+.card-header {
+  background-color: #f8f8f8;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-title {
+  margin: 0;
+  font-size: 1.9rem;
+}
+.card-body{
+  font-size: 1.4rem;
+}
+.close-btn {
+  border: none;
+  background-color: transparent;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.card-body {
+  padding: 10px;
+}
+.inactive{
+  display: none;
+}
+.active{
   
+}
+
